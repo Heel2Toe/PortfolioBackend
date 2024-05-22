@@ -19,6 +19,10 @@ const main = async () => {
 
 main();
 
+app.get('/warmup', (req, res) => {
+ res.status(200).send('ok');
+})
+
 app.post("/adminLogin", (req, res) => {
   const { username, password } = req.body;
 
